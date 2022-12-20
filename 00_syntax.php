@@ -8,7 +8,12 @@
   <title>Document</title>
 </head>
 <body>
-Hello World
-<!--Echo HTML tags-->
+
+<?php
+     echo 'Hello World';
+     echo '<br>';
+     echo 'Hello and PHP';
+?>
+
 </body>
 </html>
