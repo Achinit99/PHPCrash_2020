@@ -49,8 +49,10 @@ echo "min(2, 3)" . min(2, 3) . '<br>';
 echo "round(2.4)" . round(2.4) . '<br>';
 echo "round(2.6)" . round(2.6) . '<br>';
 echo "floor(2.6)" . floor(2.6) . '<br>';
-echo "ceil(2.4)" . ceil(2.4) . '<br>';
+echo "ceil(2.4)" . ceil(2.4) . '<br><br>';
 
 // Formatting numbers
+$number = 123456789.1234;
+echo number_format($number, 2, '.', ',');
 
 // https://www.php.net/manual/en/ref.math.php
