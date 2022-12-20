@@ -35,6 +35,9 @@
     is_numeric("3g.45"); // false
 
 // Conversion
+$strNumber = '12.34';
+$number = (int)$strNumber;
+var_dump($number);
 
 // Number functions
 
