@@ -36,17 +36,18 @@ echo "16 - ".str_ireplace('world', 'PHP', $string).'<br><br>';
       I am 23,
       I love my monther
   ";
-
   echo $longText.'<br>';
   echo nl2br($longText).'<br><br>';
 
 // Multiline text and reserve html tags
   $longText = "
-      Hello, my name is <br>Achini</br>
-      I am <br>23</br>,
+      Hello, my name is <b>Achini</b>
+      I am <b>23</b>,
       I love my monther
   ";
-
-  echo $longText.'<br>';
+  echo "1 -" . $longText . '<br>';
+  echo "2 -" . nl2br($longText) . '<br>';
+  echo "3 -" . htmlentities($longText) . '<br>';
+  echo "4 -" . nl2br(htmlentities($longText)) . '<br>';
 
 // https://www.php.net/manual/en/ref.strings.php
