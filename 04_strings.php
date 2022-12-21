@@ -31,15 +31,22 @@ echo "15 - ".str_replace('world', 'PHP', $string).'<br>';
 echo "16 - ".str_ireplace('world', 'PHP', $string).'<br><br>';
 
 // Multiline text and line breaks
-$longText = "
-    Hello, my name is Achini
-    I am 23,
-    I love my monther
-";
+  $longText = "
+      Hello, my name is Achini
+      I am 23,
+      I love my monther
+  ";
 
-echo $longText.'<br>';
-echo nl2br($longText).'<br>';
+  echo $longText.'<br>';
+  echo nl2br($longText).'<br><br>';
 
 // Multiline text and reserve html tags
+  $longText = "
+      Hello, my name is <br>Achini</br>
+      I am <br>23</br>,
+      I love my monther
+  ";
+
+  echo $longText.'<br>';
 
 // https://www.php.net/manual/en/ref.strings.php
