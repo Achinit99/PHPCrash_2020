@@ -19,8 +19,13 @@ var_dump($fruits);
 echo '</pre>';
 
 // Check if array has element at index 2
+isset($fruits[3]); // false
 
 // Append element
+$fruits[] = 'Banana';
+echo '<pre>';
+var_dump($fruits);
+echo '</pre>';
 
 // Print the length of the array
 
