@@ -1,12 +1,22 @@
 <?php
 
 // Create array
+$fruits = ["Banana", "Apple", "Orange"];
 
 // Print the whole array
+echo '<pre>';
+var_dump($fruits);
+echo '</pre>';
+
 
 // Get element by index
+echo $fruits[2] . '<br>';
 
 // Set element by index
+$fruits[0] = 'Peach';
+echo '<pre>';
+var_dump($fruits);
+echo '</pre>';
 
 // Check if array has element at index 2
 
