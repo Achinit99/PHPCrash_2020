@@ -28,9 +28,17 @@ echo "12 - ".strpos($string, 'world').'<br>';
 echo "13 - ".stripos($string, 'world').'<br>';
 echo "14 - ".substr($string, 8).'<br>';
 echo "15 - ".str_replace('world', 'PHP', $string).'<br>';
-echo "16 - ".str_ireplace('world', 'PHP', $string).'<br>';
+echo "16 - ".str_ireplace('world', 'PHP', $string).'<br><br>';
 
 // Multiline text and line breaks
+$longText = "
+    Hello, my name is Achini
+    I am 23,
+    I love my monther
+";
+
+echo $longText.'<br>';
+echo nl2br($longText).'<br>';
 
 // Multiline text and reserve html tags
 
