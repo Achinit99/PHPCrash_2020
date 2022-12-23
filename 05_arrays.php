@@ -55,6 +55,10 @@ var_dump($fruits);
 echo'</pre>';
 
 // Split the string into an array
+$string = "Banana, Apple, Peach";
+echo '<pre>'; 
+var_dump(explode(",", $string));
+echo'</pre>';
 
 // Combine array elements into string
 
