@@ -61,12 +61,23 @@ var_dump(explode(",", $string));
 echo'</pre>';
 
 // Combine array elements into string
+echo implode("&", $fruits);
 
 // Check if element exist in the array
+echo '<pre>'; 
+var_dump(in_array('Apple', $fruits));
+echo'</pre>';
 
 // Search element index in the array
+echo '<pre>'; 
+var_dump(array_search('Apple', $fruits));
+echo'</pre>';
 
 // Merge two arrays
+$vegetables =["Potato", "Cucumber"];
+echo '<pre>'; 
+var_dump(array_merge($fruits, $vegetables));
+echo'</pre>';
 
 // Sorting of array (Reverse order also)
 
