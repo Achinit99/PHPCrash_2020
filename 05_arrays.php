@@ -43,8 +43,16 @@ var_dump($fruits);
 echo'</pre>';
 
 // Add element at the beginning of the array
+array_unshift($fruits, 'bar');
+echo '<pre>';
+var_dump($fruits);
+echo'</pre>';
 
 // Remove element from the beginning of the array
+echo array_shift($fruits);
+echo '<pre>';
+var_dump($fruits);
+echo'</pre>';
 
 // Split the string into an array
 
