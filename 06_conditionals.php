@@ -20,19 +20,33 @@ $salary = 300000;
 // }
 
 // Difference between == and ===
-$age == 20; // true
-$age == '20'; // true
+// $age == 20; // true
+// $age == '20'; // true
 
-$age === 20; // true
-$age === '20'; // false
+// $age === 20; // true
+// $age === '20'; // false
 
 // if AND
+/*     // 1 -> 
+    if ($age == 20 && $salary === 300000) {
+      echo "Do something";
+    }
+
+       // 2 -> 
+    if ($age > 20 || $salary === 300000) {
+      echo "Do something";
+    } */
 
 // if OR
 
 // Ternary if
+echo $age < 22 ? 'Young' : 'Old';
 
 // Short ternary
+$myAge = $age ?: 18;
+echo '<pre>';
+var_dump($myAge);
+echo '</pre>';
 
 // Null coalescing operator
 
