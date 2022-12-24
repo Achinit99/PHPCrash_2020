@@ -77,10 +77,17 @@ echo'</pre>';
 $vegetables =["Potato", "Cucumber"];
 echo '<pre>'; 
 var_dump(array_merge($fruits, $vegetables));
+var_dump([...$fruits, ...$vegetables]);
 echo'</pre>';
 
 // Sorting of array (Reverse order also)
-
+echo '<pre>'; 
+var_dump($fruits);
+echo'</pre>';
+rsort($fruits);
+echo '<pre>'; 
+var_dump($fruits);
+echo'</pre>';
 
 // https://www.php.net/manual/en/ref.array.php
 
