@@ -2,7 +2,6 @@
 
 // Create array
 // $fruits = ["Banana", "Apple", "Orange"];
-
 // // Print the whole array
 // echo '<pre>';
 // var_dump($fruits);
@@ -102,27 +101,55 @@ $person = [
   'age' => 23,
   'hobbies' => ['Teniss', 'Video Game']
 ];
- echo '<pre>';
- print_r($person);
- echo '</pre>';
-// Get element by key
-echo $person['name'].'<br>';
+//  echo '<pre>';
+//  print_r($person);
+//  echo '</pre>';
+// // Get element by key
+// echo $person['name'].'<br>';
 
-// Set element by key
-$person['channel'] = 'SL Point';
-echo '<pre>';
-var_dump($person);
-echo '</pre>';
+// // Set element by key
+// $person['channel'] = 'SL Point';
+// echo '<pre>';
+// var_dump($person);
+// echo '</pre>';
 
-// Null coalescing assignment operator. Since PHP 7.4
+// // Null coalescing assignment operator. Since PHP 7.4
 
-// Check if array has specific key
+//     /* if (!isset($person['address'])) {
+//       $person['address'] = 'unknown';
+//     }
+//     echo '<pre>';
+//     var_dump($person);
+//     echo'</pre>'; */ 
 
-// Print the keys of the array
+//         $person['address'] = $person['address'] ??= $person['address'] ?? 'unknown';
+//         echo '<pre>';
+//         print_r($person);
+//         echo '</pre>';
 
-// Print the values of the array
+// // Check if array has specific key
+
+// // Print the keys of the array
+// echo '<pre>';
+// var_dump(array_keys($person));
+// echo '</pre>';
+
+// // Print the values of the array
+// echo '<pre>';
+// var_dump(array_values($person));
+// echo '</pre>';
 
 // Sorting associative arrays by values, by keys
-
+// asort($person);
+// echo '<pre>';
+// var_dump($person);
+// echo '</pre>';
 
 // Two dimensional arrays
+$todos = [
+  ['title' => 'Todo title 1', 'completed' => true],
+  ['title' => 'Todo title 2', 'completed' => false],
+];
+echo '<pre>';
+var_dump($todos);
+echo '</pre>';
